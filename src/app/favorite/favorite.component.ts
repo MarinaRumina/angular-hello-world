@@ -14,14 +14,24 @@ export class FavoriteComponent {
   // using decorator @Input() to mark fields or properties as input properties, do not forget to import from the library
   // building reusable components is a good practice to use aliases (nic-names) to input fields and props. (in the parentheses)
   @Input('is-favorite') isFavorite: boolean;
-  @Output() change = new EventEmitter(); // raising custom event from the component
+  @Output('change') change = new EventEmitter(); // raising custom event from the component
 
   onClick() {
     this.isFavorite = !this.isFavorite;
-    this.change.emit();
+
+    // transferring simple value to output
+    // this.change.emit(this.isFavorite); // optionally is possible to pass data to raised event
+
+    // transferring dom object
+    console.log({ newValue: this.isFavorite });
   }
 
   constructor() {}
 
 
+}
+
+
+export interface FavoriteChangedEventArgs {
+  newValue: boolean;
 }

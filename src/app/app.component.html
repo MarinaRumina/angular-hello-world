@@ -2,7 +2,7 @@
 
 <app-title-case-input></app-title-case-input>
 <br>
-<app-favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged()"></app-favorite>
+<app-favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></app-favorite>
 <br />
 <app-courses1></app-courses1>
 
