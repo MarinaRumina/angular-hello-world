@@ -14,6 +14,7 @@ import { SummaryPipe } from './summary.pipe';
 import { TitleCasePipe } from './title-casing.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCaseInputComponent } from './title-case-input/title-case-input.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TitleCaseInputComponent } from './title-case-input/title-case-input.com
     SummaryPipe,
     TitleCasePipe,
     FavoriteComponent,
-    TitleCaseInputComponent
+    TitleCaseInputComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
