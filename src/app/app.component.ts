@@ -14,6 +14,13 @@ export class AppComponent {
     postTitle: 'Title',
     isFavorite: true
   };
+
+  tweet = {
+    body: '...',
+    isLiked: true,
+    likesCount: 5
+  };
+
   // to receive a simple value as an output from calling event
   // onFavoriteChanged(isFavorite) {
   //   console.log('Favorite changed. isFavorite status: ', isFavorite);

@@ -15,6 +15,7 @@ import { TitleCasePipe } from './title-casing.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCaseInputComponent } from './title-case-input/title-case-input.component';
 import { CardComponent } from './card/card.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CardComponent } from './card/card.component';
     TitleCasePipe,
     FavoriteComponent,
     TitleCaseInputComponent,
-    CardComponent
+    CardComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,

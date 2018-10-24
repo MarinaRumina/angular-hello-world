@@ -7,10 +7,13 @@
         <p>Some content here...</p>
     </div>
 </bootstrap-card>
+
+<app-like [isActive]="tweet.isLiked" [likesCount]="tweet.likesCount"></app-like>
 <!--
 <app-title-case-input></app-title-case-input>
 <br>
 <app-favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></app-favorite>
+
 <br />
 <app-courses1></app-courses1>
 
