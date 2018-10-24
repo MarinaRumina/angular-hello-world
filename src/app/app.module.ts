@@ -16,6 +16,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCaseInputComponent } from './title-case-input/title-case-input.component';
 import { CardComponent } from './card/card.component';
 import { LikeComponent } from './like/like.component';
+import { CheckTickComponent } from './check-tick/check-tick.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LikeComponent } from './like/like.component';
     FavoriteComponent,
     TitleCaseInputComponent,
     CardComponent,
-    LikeComponent
+    LikeComponent,
+    CheckTickComponent
   ],
   imports: [
     BrowserModule,

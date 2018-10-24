@@ -9,6 +9,9 @@
 </bootstrap-card>
 
 <app-like [isActive]="tweet.isLiked" [likesCount]="tweet.likesCount"></app-like>
+<br>
+
+<app-check-tick [is-checked]="task.isFulfilled" [(countChecked)]="task.fulfillmentCount"></app-check-tick>
 <!--
 <app-title-case-input></app-title-case-input>
 <br>

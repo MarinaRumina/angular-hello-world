@@ -13,7 +13,7 @@ export class LikeComponent {
 
   onClick() {
 
-    this.likesCount += (this.isActive) ? -1 : 1;
+    this.likesCount += (this.likesCount) ? -1 : 1;
     this.isActive = !this.isActive;
 
   }

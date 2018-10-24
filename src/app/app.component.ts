@@ -21,6 +21,12 @@ export class AppComponent {
     likesCount: 5
   };
 
+  task = {
+    body: '...',
+    isFulfilled: true,
+    fulfillmentCount: 7
+  };
+
   // to receive a simple value as an output from calling event
   // onFavoriteChanged(isFavorite) {
   //   console.log('Favorite changed. isFavorite status: ', isFavorite);

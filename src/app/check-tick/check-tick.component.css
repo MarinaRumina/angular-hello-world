@@ -1,0 +1,10 @@
+@import 'https://use.fontawesome.com/releases/v5.4.1/css/all.css';
+.fa-check {
+    color: #ccc;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.highlighted {
+    color: rgb(0, 233, 0);
+}
