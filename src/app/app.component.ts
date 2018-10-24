@@ -10,6 +10,8 @@ import { FavoriteChangedEventArgs } from './favorite/favorite.component';
 export class AppComponent {
   title = 'hello-world';
 
+  courses = [1, 2];
+
   post = {
     postTitle: 'Title',
     isFavorite: true

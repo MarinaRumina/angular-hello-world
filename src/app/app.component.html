@@ -1,6 +1,35 @@
 <h1>Angular</h1>
 
-<bootstrap-card>
+<ul class="nav nav-pills">
+    <li class="active"><a href="">Map View</a></li>
+    <li><a href="">List View</a></li>
+</ul>
+<div>
+    <div>Map view content</div>
+    <!-- <div>List view content</div> -->
+</div>
+
+<!-- *ngIf modifies the DOM adding or removing DOM OBJECTS -->
+<!-- <h2>*ngIf</h2>
+<div *ngIf="courses.length > 0; then listOfCourses else noCourses"></div>
+<ng-template #listOfCourses>
+    List of courses!
+</ng-template>
+<ng-template #noCourses>
+    No courses yet...
+</ng-template> -->
+
+<!-- Hiding elements of the DOM based on some condition -->
+<!-- <h2>Hidden property of the element</h2>
+<div [hidden]="courses.length == 0">
+    List of courses!
+</div>
+<div [hidden]="courses.length > 0">
+    No courses yet...
+</div> -->
+
+
+<!-- <bootstrap-card>
     <ng-container class="heading">Heading</ng-container>
     <div class="body">
         <h2>Body</h2>
@@ -11,7 +40,7 @@
 <app-like [isActive]="tweet.isLiked" [likesCount]="tweet.likesCount"></app-like>
 <br>
 
-<app-check-tick [is-checked]="task.isFulfilled" [(countChecked)]="task.fulfillmentCount"></app-check-tick>
+<app-check-tick [is-checked]="task.isFulfilled" [(countChecked)]="task.fulfillmentCount"></app-check-tick> -->
 <!--
 <app-title-case-input></app-title-case-input>
 <br>
