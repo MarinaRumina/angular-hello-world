@@ -9,24 +9,40 @@ import { FavoriteChangedEventArgs } from './favorite/favorite.component';
 })
 export class AppComponent {
 
-  courses = [
-    {id: 1, name: 'course 1'},
-    {id: 2, name: 'course 2'},
-    {id: 3, name: 'course 3'}
-  ];
+  task = {
+    title: 'Review applications',
+    assignee: {
+      name: 'John Smith'
+    }
+  };
 
-  onAdd() {
-    this.courses.push({id: 4, name: 'course 4'});
-  }
+  // --------------------
+  // courses;
 
-  onRemove(course) {
-    let index = this.courses.indexOf(course);
-    this.courses.splice(index, 1);
-  }
+  // loadCourses() {
+  //   this.  courses = [
+  //     {id: 1, name: 'course 1'},
+  //     {id: 2, name: 'course 2'},
+  //     {id: 3, name: 'course 3'}
+  //   ];
+  // }
 
-  onChange(course) {
-    course.name = 'UPDATED';
-  }
+  // trackCourse(index, course) {
+  //   // making angular track objects by Ids instead of Identities
+  //   return course ? course.id : undefined;
+  // }
+  // onAdd() {
+  //   this.courses.push({id: 4, name: 'course 4'});
+  // }
+
+  // onRemove(course) {
+  //   let index = this.courses.indexOf(course);
+  //   this.courses.splice(index, 1);
+  // }
+
+  // onChange(course) {
+  //   course.name = 'UPDATED';
+  // }
   // ------------------------------------------
   // viewMode = 'map';
 
@@ -59,7 +75,7 @@ export class AppComponent {
 
   // to receive an object as an output from calling event
   // onFavoriteChanged(eventArgs: { newValue: boolean }) {
-  onFavoriteChanged( eventArgs: FavoriteChangedEventArgs ) {
-    console.log('Favorite changed. isFavorite status: ', eventArgs);
-  }
+  // onFavoriteChanged( eventArgs: FavoriteChangedEventArgs ) {
+  //   console.log('Favorite changed. isFavorite status: ', eventArgs);
+  // }
 }

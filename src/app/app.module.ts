@@ -17,6 +17,7 @@ import { TitleCaseInputComponent } from './title-case-input/title-case-input.com
 import { CardComponent } from './card/card.component';
 import { LikeComponent } from './like/like.component';
 import { CheckTickComponent } from './check-tick/check-tick.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CheckTickComponent } from './check-tick/check-tick.component';
     TitleCaseInputComponent,
     CardComponent,
     LikeComponent,
-    CheckTickComponent
+    CheckTickComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
