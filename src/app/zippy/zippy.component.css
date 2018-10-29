@@ -1,0 +1,23 @@
+@import 'https://use.fontawesome.com/releases/v5.4.1/css/all.css';
+.zippy {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.zippy>div {
+    padding: 20px;
+}
+
+.zippy-heading {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.expanded {
+    background-color: #f0f0f0;
+}
+
+.fas {
+    float: right;
+}

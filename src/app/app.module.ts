@@ -18,6 +18,7 @@ import { CardComponent } from './card/card.component';
 import { LikeComponent } from './like/like.component';
 import { CheckTickComponent } from './check-tick/check-tick.component';
 import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { InputFormatDirective } from './input-format.directive';
     CardComponent,
     LikeComponent,
     CheckTickComponent,
-    InputFormatDirective
+    InputFormatDirective,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,

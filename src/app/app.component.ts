@@ -9,12 +9,13 @@ import { FavoriteChangedEventArgs } from './favorite/favorite.component';
 })
 export class AppComponent {
 
-  task = {
-    title: 'Review applications',
-    assignee: {
-      name: 'John Smith'
-    }
-  };
+  
+  // task = {
+  //   title: 'Review applications',
+  //   assignee: {
+  //     name: 'John Smith'
+  //   }
+  // };
 
   // --------------------
   // courses;
