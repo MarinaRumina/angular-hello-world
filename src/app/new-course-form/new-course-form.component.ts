@@ -17,4 +17,8 @@ export class NewCourseFormComponent {
     console.log(x);
   }
 
+  onSubmit(course) {
+    console.log(course);
+  }
+
 }
