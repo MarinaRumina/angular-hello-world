@@ -1,0 +1,35 @@
+<form #f="ngForm">
+    <div class="form-group">
+        <label for="courseName"><h2>Course Name</h2></label>
+        <input required minlength="5" ngModel name="courseName" id="courseName" #courseName="ngModel" type="text" class="form-control" (change)="log(courseName)">
+
+        <div class="alert alert-danger" *ngIf="courseName.touched && !courseName.valid">
+
+            <div *ngIf="courseName.errors.required">
+                Course name is required.
+            </div>
+            <div *ngIf="courseName.errors.minlength">
+                Course name have to be longer then {{ courseName.errors.minlength.requiredLength }} characters.
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="category">
+          <h2>Category</h2>
+      </label>
+        <select ngModel reqired name="category" #category="ngModel" (change)="log(category)" id="category" class="form-control">
+        <option value="0"></option>
+        <option *ngFor="let category of categoryOptions" [value]="category.id">{{ category.name }}</option>
+      </select>
+
+        <div class="alert alert-danger" *ngIf="category.touched && !category.value == 0">
+            <div *ngIf="category.errors.required">
+                Please chose category of the course.
+            </div>
+        </div>
+    </div>
+</form>
+<p>
+    {{ f.value | json }}
+</p>
